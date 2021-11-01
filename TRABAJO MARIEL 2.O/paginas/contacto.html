@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/stylecontact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+    <title>Contacto</title>
+</head>
+<body>
+    <header >
+        <div id ="marca" >
+            <img src="/img/LOGO-CLA-CLA.png" alt="logo"/>
+        </div> 
+        <nav class= "botonera-principal">
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 class= "formulario-titulo">Contactenos</h1>
+        <br>
+    <form action='registrar.php' method='post' autocomplete='off' class='formulario , container' onsubmit="return validar();">
+        <label for='name' class='formulario-label'>Nombre</label>
+        <input type='text' id="Nombre" name='Nombre' required title='Nombre' class='formulario-input'>
+        <label for='lastname' class='formulario-label'>Apellido</label>
+        <input type='text' id="Apellido" name='Apellido' required title='Apellido' class='formulario-input'>
+        <label for = "mail" class='formulario-label'>E-mail</label>
+        <input type="email"  id="Mail" name="user_mail" required title='Apellido' class='formulario-input'>
+        <label for= 'mensaje' class='formulario-label'> Mensaje </label>
+        <input type='text'id="Mensaje" name='Mensaje' required title='Mensaje' class='formulario-input'>
+        <input type="submit" class= 'formulario-submit'> 
+      </form>
+      
+      <script src="/js/index.js"></script>
+      <fotter class="container">
+        <br>
+        <div class="mariel">Romero Costa Mariel Codo a Codo 2021 Front-end</div>
+        <br>
+    </fotter>
+</body>
+</html>

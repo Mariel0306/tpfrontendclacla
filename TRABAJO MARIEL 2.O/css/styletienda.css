@@ -1,0 +1,478 @@
+ /*EMPIEZA LA CSS DE TIENDA*/
+ header{
+  width: 1000px;
+  height:70px;
+  margin-left:auto;
+  margin-right:auto; 
+}
+
+#marca img{
+  width: 20%;
+  height: 65px;
+  float: left;
+  margin-top: 10px;
+}
+.centrado{
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+@media screen and (min-width: 52em){
+    .centrado{
+        max-width: 52em;
+
+    }
+}  
+
+.botonera-principal{
+    padding-bottom: 4em;
+    margin-bottom: 4em;
+   
+}
+
+.botonera-principal ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background: white;
+    
+
+}
+.botonera-principal ul li a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: .6em 1em;
+
+}
+.botonera-principal ul li a:hover{
+    background:grey;
+    color: white;
+
+}
+
+.botonera-principal ul{
+    display: flex;
+    flex-wrap:nowrap;
+    justify-content: space-around;
+}
+
+.botonera-principal li{
+    text-align: center;
+    flex-direction: column;
+    flex: 1 0 auto ;
+}
+
+/*carusel de prueba*/
+body{
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+  }
+
+
+  section{
+      display: flex;
+  }
+
+  
+  
+  .container{
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+  }
+ 
+  
+  
+  ul, li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+  }
+  
+  ul.slider{
+    position: relative;
+    width: 200px;
+    height: 300px;
+  }
+  
+  ul.slider li {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      opacity: 0;
+      width: inherit;
+      height: inherit;
+      transition: opacity .5s;
+      background:#fff;
+  }
+  
+  ul.slider li img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  ul.slider li:first-child {
+      opacity: 1; 
+  }
+  
+  ul.slider li:target {
+      opacity: 1; 
+  }
+  
+  .menu{
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .menu li{
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .menu li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: grey;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+  }
+  
+  
+  .container-fotter{
+    margin: auto;
+    background-color: white;
+    width: 100%;
+    padding: 30px;
+  }
+
+  @keyframes slider{
+      form{
+          opacity: 1;
+      }
+      to{
+          opacity:0;
+      }
+  }
+
+  ul.slider li img{
+      animation-name: slider;
+      animation-duration: 2s;
+  }
+  .primer-fila-fotos{
+    display:flex; 
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction:row;
+  }
+  .segunda-fila-fotos{
+    display:flex; 
+    width: 100%; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .tercer-fila-fotos{
+    display:flex;
+    width: 100%; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .mariel{
+    text-align:center;
+    font-size: 15px;
+  }
+
+
+  /*media qeries*/
+  
+  @media  screen and (max-width: 1280px) {
+    header{
+      width: 90%;
+      height:50px;
+      margin-left:auto;
+      margin-right:auto; 
+  
+  }
+  .botonera-principal{
+    font-size: 15px;
+    padding-bottom: 4em;
+    margin-bottom: 4em;
+   
+}
+  
+  #marca img{
+      width:150px;
+      height: 50px;
+      float: left;
+  }
+ 
+  
+  /*carusel de prueba*/
+  body{
+      background-color: white;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 19px;
+    }
+  
+  
+    section{
+        display: flex;
+    }
+  
+    
+    
+    .container{
+      width: 95%;
+       padding: 30px;
+    }
+  
+    ul.slider{
+      position: relative;
+      width: 170px;
+      height: 300px;
+    }
+  
+    
+    ul.slider li img{
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+    
+  
+    .menu{
+      text-align: center;
+      margin: 20px;
+    }
+  
+    .menu li a{
+      padding: 10px;
+      width: 15px;
+      height: 15px;
+      font-size: 15px;
+      text-align: center;
+      border-radius: 100%;
+    }
+    
+    
+    .container-fotter{
+      margin: auto;
+      background-color: white;
+      width: 100%;
+      padding: 30px;
+    }
+  
+
+    .primer-fila-fotos{
+      width: 95%;
+    
+    }
+    .segunda-fila-fotos{
+      width: 95%; 
+    }
+    .tercer-fila-fotos{
+      width: 95%; 
+    }
+    .mariel{
+      text-align:center;
+      font-size: 12px;
+    }
+  
+  
+
+  @media  screen and (min-width: 768px) and (max-width: 1280px) {
+    header{
+      width: 90%;
+      height:50px;
+      margin-left:auto;
+      margin-right:auto; 
+  
+  }
+  .botonera-principal{
+    font-size: 14px;
+    padding-bottom: 4em;
+    margin-bottom: 4em;
+   
+}
+  
+  #marca img{
+      width:150px;
+      height: 50px;
+      float: left;
+  }
+ 
+  
+  /*carusel de prueba*/
+  body{
+      background-color: white;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 19px;
+    }
+  
+  
+    section{
+        display: flex;
+    }
+  
+    
+    
+    .container{
+      width: 80%;
+       padding: 30px;
+    }
+  
+    ul.slider{
+      position: relative;
+      width: 170px;
+      height: 300px;
+    }
+  
+    
+    ul.slider li img{
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    
+  
+    .menu{
+      text-align: center;
+      margin: 10px;
+    }
+  
+    .menu li a{
+      padding: 10px;
+      width: 15px;
+      height: 15px;
+      font-size: 13px;
+      text-align: center;
+      border-radius: 100%;
+    }
+    
+    
+    .container-fotter{
+      margin: auto;
+      background-color: white;
+      width: 100%;
+      padding: 30px;
+    }
+  
+
+    .primer-fila-fotos{
+      width: 90%;
+    
+    }
+    .segunda-fila-fotos{
+      width: 90%; 
+    }
+    .tercer-fila-fotos{
+      width: 90%; 
+    }
+  
+
+  }
+  @media  screen and (max-width: 400px){
+    header{
+      width: 100%;
+      height:auto;
+      margin-left:auto;
+      margin-right:auto; 
+  
+  }
+  .botonera-principal{
+    width: 100%;
+    font-size: 12px;
+    padding-bottom: 4em;
+    margin-bottom: 4em;
+   
+}
+  
+  #marca img{
+      width: 50px;
+      height: auto;
+      float: left;
+  }
+ 
+  
+  /*carusel de prueba*/
+  body{
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+  }
+  
+    
+     .container{
+      width: 90%;
+       padding: 15px;
+    }
+    .slider{
+      width: 100%;
+    }
+  
+    ul.slider{
+      position: relative;
+      width: 150px;
+      height: 250px;
+    }
+  
+    
+    ul.slider li img{
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+    
+  
+    .menu{
+      text-align: center;
+      margin: 10px;
+    }
+  
+    .menu li a{
+      padding: 10px;
+      width: 10px;
+      height: 10px;
+      font-size: 11px;
+      text-align: center;
+      border-radius: 100%;
+    }
+    
+    
+    .container-fotter{
+      margin: auto;
+      background-color: white;
+      width: 100%;
+      padding: 30px;
+    }
+  
+
+    .primer-fila-fotos{
+      width: 100%;
+    
+    }
+   
+    
+    .segunda-fila-fotos{
+      width: 100%; 
+    }
+    .tercer-fila-fotos{
+      width: 100%; 
+    }
+    .mariel{
+      text-align:center;
+      font-size: 10px;
+    }
+  
+
+  }
+  
